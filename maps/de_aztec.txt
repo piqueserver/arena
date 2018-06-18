@@ -1,0 +1,10 @@
+name = 'de_aztec'
+version = '1.0'
+author = 'Danke-o'
+extensions = {
+     'boundary_damage' : {'left' : 151, 'right' : 375, 'top' : 191, 'bottom' : 309, 'damage': 100},
+     'arena': True,
+     'arena_blue_spawn' : (361,262,53),
+     'arena_green_spawn' : (164,262,50),
+     'arena_gates': ((160,258,47),(365,257,49)),
+ }

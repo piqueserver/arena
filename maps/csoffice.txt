@@ -1,0 +1,11 @@
+name = 'cs_office'
+version = '1.0'
+author = 'Danke'
+description = ('Conversion of the map from CSS')
+extensions = {
+     'water_damage' : 100,
+     'arena': True,
+     'arena_blue_spawn' : (223,340,55),
+     'arena_green_spawn' : (323,206,46),
+     'arena_gates': ((211,330,54), (236,338,54), (314,216,45))
+ } 

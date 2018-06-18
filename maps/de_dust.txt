@@ -1,0 +1,10 @@
+name = 'de_dust'
+version = '1.0'
+author = 'Danke-o'
+extensions = {
+     'arena': True,
+     'arena_blue_spawn' : (231, 367, 50),
+     'arena_green_spawn' : (305,161,58),
+     'arena_gates': ((236,371,48),(299,164,56)),
+     'water_damage' : 100
+ }

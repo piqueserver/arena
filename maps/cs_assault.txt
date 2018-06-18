@@ -1,0 +1,10 @@
+name = 'cs_assault'
+version = '1.0'
+author = 'Danke-o'
+extensions = {
+     'arena': True,
+     'arena_blue_spawn' : (312, 248, 60),
+     'arena_green_spawn' : (197, 246, 45),
+     'arena_gates': ((196,240,44),(203,246,44),(317,237,57)),
+     'water_damage' : 100
+ }

@@ -1,0 +1,11 @@
+name = 'cs_italy'
+version = '1.0'
+author = 'Danke'
+description = ('Conversion of the map from CSS')
+extensions = {
+     'water_damage' : 100,
+     'arena': True,
+     'arena_blue_spawn' : (216, 377, 58),
+     'arena_green_spawn' : (256, 200, 47),
+     'arena_gates': ((217, 372, 58), (256, 195, 47))
+ }

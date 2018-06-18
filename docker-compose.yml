@@ -1,0 +1,9 @@
+version: '3'
+services:
+  arena:
+    image: piqueserver/piqueserver:master
+    volumes:
+      - .:/config
+    ports:
+     - "8001:8001/udp" # game server
+     - "8002:8002" # status server

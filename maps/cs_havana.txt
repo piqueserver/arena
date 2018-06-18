@@ -1,0 +1,10 @@
+name = 'cs_havana'
+version = '1.0'
+author = 'Danke-o'
+extensions = {
+     'water_damage' : 100,
+     'arena': True,
+     'arena_blue_spawn' : (264,297,59),
+     'arena_green_spawns' : ((254,211,50),(253,222,50)),
+     'arena_gates': ((264,209,48),(264,220,48),(256,287,60)),
+ }

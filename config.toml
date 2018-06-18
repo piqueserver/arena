@@ -1,0 +1,130 @@
+# INFO
+name = "pique arena"
+
+motd = [
+ "Welcome to %(server_name)s",
+ "Map: %(map_name)s by %(map_author)s",
+ "Game mode: %(game_mode)s",
+ "Server powered by piqueserver"
+]
+
+help = [
+  "Server name: %(server_name)s", "Map: %(map_name)s by %(map_author)s",
+  "Game mode: %(game_mode)s",
+  "/streak    Shows how many kills in a row you got without dying",
+  "/intel     Tells you who's got the enemy intel",
+  "/votekick  Start a vote to temporarily ban a disruptive player",
+  "/time      Remaining time until forced map reset"
+]
+
+rules = [
+  "Don't cheat. Have fun!"
+]
+
+tips = [
+  "You are playing %(game_mode)s on %(server_name)s",
+  "Type /help for info & commands"
+]
+
+tips_frequency = 5
+
+# SERVER
+master = false
+max_players = 32
+server_prefix = ""
+max_connections_per_ip = 3
+port = 8001
+network_interface = ""
+login_retries = 3
+
+scripts = [
+  "piqueserver.scripts.rollback",
+  "piqueserver.scripts.votekick",
+  "piqueserver.scripts.map_extensions",
+  "piqueserver.scripts.disco",
+  "piqueserver.scripts.trusted",
+  "piqueserver.scripts.ratio",
+  "piqueserver.scripts.aimbot2",
+  "piqueserver.scripts.afk"
+]
+
+# MAP
+rotation = [
+  "de_train",
+  "csitaly", 
+  "de_dust",
+  "de_aztec", 
+  "cs_assault", 
+  "csoffice", 
+  "cs_havana"
+]
+advance_on_win = true
+
+# GAME
+game_mode = "piqueserver.game_modes.arena"
+cap_limit = 10
+default_time_limit = 120
+respawn_time = 16
+respawn_waves = true
+melee_damage = 80
+fall_damage = true
+friendly_fire = false
+balanced_teams = 2
+speedhack_detect = false
+
+
+[team1]
+name = "Blue"
+color = [0, 0, 255]
+
+[team2]
+name = "Green"
+color = [0, 255, 0]
+
+
+[passwords]
+admin = [ "changethis!" ]
+moderator = [ "thistoo!"]
+guard = [ "this too!"]
+trusted = [ "can keep it empty too"]
+
+
+[bans]
+default_duration = 1440
+
+
+[rights]
+moderator = [
+]
+guard = [
+]
+
+
+[status_server]
+enabled = true
+port = 8002
+logging = false
+
+
+[irc]
+enabled = false
+nickname = "csarena"
+username = "csarena"
+realname = "csarena"
+server = "chat.freenode.net"
+port = 6667
+channel = "#piquearena"
+password = ""
+# prefixes irc users must use for bot to process as command or to send to game chat
+commandprefix = "!"
+chatprefix = "."
+
+
+[afk]
+time_limit = 3.5
+
+
+[votekick]
+percentage = 35
+ban_duration = 30
+public_votes = true
