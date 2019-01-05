@@ -7,7 +7,7 @@
 ```bash
 git clone https://github.com/piqueserver/arena && cd arena
 vim config.toml # edit servername/passwords/enable irc relay etc.
-piqueserver -d .
+piqueserver -d . # note: requires master version i.e. you'll have to install from source
 # or, with docker/docker-compose
 docker-compose up -d # note: -d here, daemonizes it
 docker-compose down  # shutting it down
